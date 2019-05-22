@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<HTML lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>投稿する</title>
+	</head>
+	<style type="text/css">
+		* {
+			text-align: center;
+		}
+		body{
+			font-size: 20px;
+			background-color: rgb(0, 255, 213);
+		}
+		#title{
+			font-size:50px;
+		}
+		#text{
+			width:250px;
+			height:150px;
+			text-align: left;
+			size: 30px;
+		}
+	</style>
+  <body>
+	<div id="title">投稿画面</div> 
+	<form method="POST" action="insert.php">
+			<label>カテゴリー
+				<select name="category">
+					<option value="">選択してください</option>
+					<option value="スポーツ">スポーツ</option>
+					<option value="ゲーム">ゲーム</option>
+					<option value="ミュージック">ミュージック</option>
+					<option value="ニュース">ニュース</option>
+				</select>
+			</label>
+			<br>
+			<label>名前
+				<input type="text" name="name">
+			</label>
+			<br>
+			<label>本文
+				<textarea id="text" name="text"></textarea>
+			</label>
+			<br>
+			<input type="submit" value="送信">
+		</form>
+  </body>
+</HTML>
